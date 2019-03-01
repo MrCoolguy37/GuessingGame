@@ -1,3 +1,11 @@
+/**
+* Kevin is The Biggest Gay! He Thinks
+* He's hot shit now that he's a master
+* coder. I'm not jealous or anything tho
+*/
+
+//Imports
+
 import java.util.Scanner;
 import java.util.Random;
 
@@ -13,6 +21,11 @@ public class GuessingGame {
 
         //Logic and While loops.
 
+        /**
+        * Make sure a new random number
+        * is generated and numberOfTries
+        * is reset to 0 on each new game
+        */
         while (true) {
             computerValue = randomNumber.nextInt(100);
             numberOfTries = 0;
@@ -28,6 +41,7 @@ public class GuessingGame {
                     break;
                 }
                 else if (guess < computerValue) System.out.println("Guess is too low!");
+                //This should really just be an else, but I never refactored :(
                 else if (guess > computerValue) System.out.println("Guess is too high!");
             }
 
